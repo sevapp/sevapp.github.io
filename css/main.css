@@ -1,4 +1,52 @@
+/*@font-face {
+    font-family: inconsolata;
+    src: url(../font/Inconsolata-Regular.ttf);
+}*/
+
 body {
-	background-color: #000;
-	color: #0f0;
+	font-family: consolas;
+	color: #2d6;
+	margin: 0px;
+}
+
+hr {
+	border-color: #242;
+
+}
+
+a {
+	color: #0e4;
+}
+a:hover {
+	color: #395;
+}
+
+#intro {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+
+	height: 100%;
+	background-color: #222;
+	padding-right: 30px;
+}
+
+#about_me_text {
+	text-align: left;
+	font-size: 6vmin;
+	margin-left: 5rem;
+}
+
+#name {
+	margin-bottom: 0rem;
+}
+
+#experiens {
+	height: 100%;
+	background-color: #444;
+}
+
+#works {
+	height: 100%;
+	background-color: #222;
 }
