@@ -13,44 +13,6 @@ body {
 	background-color: var(--c0);
 }
 
-#card {
-	margin-left: 5rem;
-}
-
-.card_name {
-	text-shadow: 0px 0px 1px var(--c2);
-	margin-bottom: 0rem;
-}
-
-#card_about {
-	text-shadow: 0px 0px 0.1em var(--c2);
-	position: relative;
-	width: 40%;
-}
-
-#card_about:before{
-	text-shadow: 0px 0px 0.1em var(--c5);
-	content: '>>> ';
-	color: var(--c5);
-}
-
-@keyframes blink{
-	from { width: 0; } 
-	to { opacity: .0; }
-}
-
-#card_about:after {
-	content: '\25AE';
-	color: var(--c2);
-	animation: blink 1s infinite;
-}
-
-@media only screen and (max-device-width: 480px) {
-	#card_about {
-		width: 80%;
-	}
-}
-
 /* EXPERIENS */
 #skills {
 	height: 100%;
@@ -65,6 +27,7 @@ body {
 
 /* CONTACTS */
 #contacts {
+	height: 100%;
 	background-color: var(--c1);
 }
 
