@@ -1,11 +1,17 @@
+/*
+	-------------------------------------
+	CSS CORE
+	-------------------------------------
+*/
+
 /* def colors */
 :root {
-	--c0: #000;
-	--c1: #000;
-	--c2: #000;
-	--c3: #000;
-	--c4: #000;
-	--c5: #000;
+	--c0: #222;
+	--c1: #333;
+	--c2: #2d6;
+	--c3: #0e4;
+	--c4: #395;
+	--c5: #cc0;
 	--c6: #000;
 }
 
@@ -17,36 +23,52 @@
 .c5 { color: var(--c5); }
 .c6 { color: var(--c6); }
 
-h1, h2, h3, h4, h5, h6 {
+/* typography */
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-top: 0;
 	margin-bottom: 2rem;
 	font-weight: 300;
 }
 
-h1 { font-size: 3.2rem; }
-h2 { font-size: 2.8rem; }
-h3 { font-size: 2.2rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 0.9rem; }
+.h1 { font-size: 3.2rem; }
+.h2 { font-size: 2.8rem; }
+.h3 { font-size: 2.2rem; }
+.h4 { font-size: 1.6rem; }
+.h5 { font-size: 1.2rem; }
+.h6 { font-size: 0.9rem; }
 
-@media only screen and (max-device-width: 768px) {
-	h1, h2, h3, h4, h5, h6 {
+@media only screen and (max-device-width: 480px) {
+	.h1, .h2, .h3, .h4, .h5, .h6 {
 		margin-top: 0;
 		margin-bottom: 3rem;
 		font-weight: 400;
 	}
 
-	h1 { font-size: 4.7rem; }
-	h2 { font-size: 4.3rem; }
-	h3 { font-size: 3.7rem; }
-	h4 { font-size: 3.1rem; }
-	h5 { font-size: 3.0rem; }
-	h6 { font-size: 2.3rem; }
+	.h1 { font-size: 4.7rem; }
+	.h2 { font-size: 4.3rem; }
+	.h3 { font-size: 3.7rem; }
+	.h4 { font-size: 3.1rem; }
+	.h5 { font-size: 3.0rem; }
+	.h6 { font-size: 2.3rem; }
+}
+
+
+/* links */
+a {
+	color: var(--c4);
+	text-decoration-color: transparent;
+	transition: color 1s,
+				text-decoration-color 1s;
+}
+a:hover {
+	transition: color 0.5s,
+				text-decoration-color 0.5s;
+	color: var(--c3);
+	text-decoration-color: var(--c3);
 }
 
 /* panels skelet */
-.page {
+.content {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -66,6 +88,10 @@ h6 { font-size: 0.9rem; }
 	align-items: center;
 }
 
+/*
+	-------------------------------------
+*/
+
 
 
 body {
@@ -74,22 +100,31 @@ body {
 	margin: 0px;
 }
 
-hr {
-	border-color: #242;
 
+/* INTRO */
+#intro {
+	justify-content: left;
+	height: 100%;
+	background-color: var(--c0);
 }
 
-a {
-	color: #0e4;
-	text-decoration: none;
-}
-a:hover {
-	color: #395;
-	text-decoration: underline;
+#card {
+	margin-left: 5rem;
 }
 
-#cur {
-  animation: blink 1s infinite;
+#card_name {
+	margin-bottom: 0rem;
+}
+
+#card_about {
+	position: relative;
+	width: 40%;
+	font-family: Consolas, monospace;
+}
+
+#card_about:before{
+	content: '$';
+	color: var(--c5);
 }
 
 @keyframes blink{
@@ -97,48 +132,34 @@ a:hover {
 	to { opacity: .0; }
 }
 
-#intro {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-
-	height: 100%;
-	background-color: #222;
-	padding-right: 30px;
+#card_about:after {
+	content: '\25AE';
+	color: var(--c4);
+	animation: blink 1s infinite;
 }
 
-#about_me_text {
-	text-align: left;
-	margin-left: 5rem;
-}
-
-#name {
-	margin-bottom: 0rem;
-}
-
-#about {
-	position: relative;
-	width: 40%;
-	font-family: Consolas, monospace;
-}
-
-@media only screen and (max-device-width: 768px) {
-	#about {
+@media only screen and (max-device-width: 480px) {
+	#card_about {
 		width: 80%;
 	}
 }
 
-#super {
-	color: #cc0;
-}
 
-
+/* EXPERIENS */
 #experiens {
 	height: 100%;
-	background-color: #333;
+	background-color: var(--c1)
 }
 
+
+/* WORKS */
 #works {
 	height: 100%;
-	background-color: #222;
+	background-color: var(--c0)
+}
+
+/* CONTACTS */
+#contacts {
+	height: 100%;
+	background-color: var(--c1)	
 }
