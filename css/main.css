@@ -11,6 +11,9 @@ body {
 	justify-content: left;
 	height: 100%;
 	background-color: var(--c0);
+	background: radial-gradient(circle, #222 0.04em, var(--c0) 0.052em);
+	background-size: 1em 1em;
+	background-repeat: repeat;
 }
 
 /* EXPERIENS */
@@ -22,13 +25,16 @@ body {
 /* WORKS */
 #works {
 	height: 100%;
-	background-color: var(--c0);
+	background-color: var(--c1);
 }
 
 /* CONTACTS */
 #contacts {
 	height: 100%;
-	background-color: var(--c1);
+	background-color: var(--c0);
+	background: radial-gradient(circle, #222 0.04em, var(--c0) 0.052em);
+	background-size: 1em 1em;
+	background-repeat: repeat;
 }
 
 #contacts_list {
