@@ -26,14 +26,6 @@
 .h5 { font-size: 1.2rem; }
 .h6 { font-size: 0.9rem; }
 
-@media screen and (max-device-width: 480px) {
-	.h1 { font-size: 4.7rem; }
-	.h2 { font-size: 4.3rem; }
-	.h3 { font-size: 3.7rem; }
-	.h4 { font-size: 3.1rem; }
-	.h5 { font-size: 3.0rem; }
-	.h6 { font-size: 2.3rem; }
-}
 
 a {
 	color: var(--c4);
@@ -119,4 +111,14 @@ body {
 
 #card_contacts {
 	color: var(--c4);
+}
+
+@media screen and (max-device-width: 480px) {
+	.h1 { font-size: 4.7rem; }
+	.h2 { font-size: 4.3rem; }
+	.h3 { font-size: 3.7rem; }
+	.h4 { font-size: 3.1rem; }
+	.h5 { font-size: 3.0rem; }
+	.h6 { font-size: 2.3rem; }
+	#card_about { width: 77%; }
 }
