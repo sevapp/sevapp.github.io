@@ -88,7 +88,7 @@ body {
 #card { margin-left: 5rem; }
 #card_name { margin-bottom: 0rem; }
 #card_about { 
-	width: 40%;
+	width: 35%;
 	color: var(--c2);
 }
 
