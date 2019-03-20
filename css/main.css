@@ -57,8 +57,8 @@ a:hover {
 }
  
 .content::-webkit-scrollbar-thumb {
-  background-color: var(--c2);
-  outline: 1px solid slategrey;
+	background-color: var(--c2);
+	outline: 1px solid slategrey;
 }
 
 
