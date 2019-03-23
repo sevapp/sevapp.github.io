@@ -118,4 +118,8 @@ body {
 	.h5 { font-size: 3.0rem; }
 	.h6 { font-size: 2.3rem; }
 	#card_about { width: 77%; }
+	#intro {
+		background: radial-gradient(circle, #222 0.1em, var(--c0) 0.052em);
+		background-size: 2em 2em;
+	}
 }
