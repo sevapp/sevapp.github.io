@@ -96,11 +96,13 @@ body {
 	content: '>>> ';
 	color: var(--c5);
 }
+
 #card_about:after {
 	content: '\25AE';
 	color: var(--c2);
 	animation: blink 1s infinite;
 }
+
 @keyframes blink{
 	from { width: 0; } 
 	to { opacity: .0; }
